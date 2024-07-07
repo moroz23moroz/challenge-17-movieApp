@@ -26,26 +26,90 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="css/style.min.css" />
-    <title>Start</title>
+    <title>Movie App</title>
   </head>
 
   <body>
     <div class="wrapper">
-      <header class="header">It's OK</header>
-      <!-- <picture class="picture object-fit-cover">
-    <source srcset="img/small2.webp, img/small2@2x.webp 2x" type="image/webp">
-    <img src="img/small2.png" srcset="img/small2.png, img/small2@2x.png 2x" alt="СЛЕСАРНЫЕ РАБОТЫ">
-  </picture> -->
-      <!-- <picture class="picture object-fit-cover">
-    <source media="(min-width: 577px)" srcset="img/promo-bg.webp, img/promo-bg@2x.webp 2x" type="image/webp">
-    <source media="(max-width: 576px)" srcset="img/promo-bg-576.webp, img/promo-bg-576@2x.webp 2x" type="image/webp">
-    <img src="img/promo-bg.png" srcset="img/promo-bg.png, img/promo-bg@2x.png 2x" alt="CARON MOTORS">
-  </picture> -->
-      <main>
-        <section class="promo"></section>
+      <header class="header">
+        <form id="form">
+          <input type="text" id="search" class="search" placeholder="Search" />
+        </form>
+      </header>
+      <main id="main">
+        <div class="movie">
+          <picture class="picture object-fit-cover">
+            <source
+              srcset="img/movie seats.webp, img/movie seats@2x.webp 2x"
+              type="image/webp"
+            />
+            <img
+              src="img/movie seats.JPG"
+              srcset="img/movie seats.JPG, img/movie seats@2x.jpg 2x"
+              alt="Movie seats"
+            />
+          </picture>
+          <div class="movie-info">
+            <h3>Movie Title</h3>
+            <span class="green">9.8</span>
+          </div>
+          <div class="overview">
+            <h3>Overview</h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+            molestias, harum recusandae magnam accusantium, dicta doloremque,
+            culpa ab provident autem nemo ullam aliquam totam laborum ipsum
+            quisquam ratione illo numquam.
+          </div>
+        </div>
+        <div class="movie">
+          <picture class="picture object-fit-cover">
+            <source
+              srcset="img/movie seats.webp, img/movie seats@2x.webp 2x"
+              type="image/webp"
+            />
+            <img
+              src="img/movie seats.JPG"
+              srcset="img/movie seats.JPG, img/movie seats@2x.jpg 2x"
+              alt="Movie seats"
+            />
+          </picture>
+          <div class="movie-info">
+            <h3>Movie Title</h3>
+            <span class="orange">3.8</span>
+          </div>
+          <div class="overview">
+            <h3>Overview</h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+            molestias, harum recusandae magnam accusantium, dicta doloremque,
+            culpa ab provident autem nemo ullam aliquam totam laborum ipsum
+            quisquam ratione illo numquam.
+          </div>
+        </div>
+        <div class="movie">
+          <picture class="picture object-fit-cover">
+            <source
+              srcset="img/movie seats.webp, img/movie seats@2x.webp 2x"
+              type="image/webp"
+            />
+            <img
+              src="img/movie seats.JPG"
+              srcset="img/movie seats.JPG, img/movie seats@2x.jpg 2x"
+              alt="Movie seats"
+            />
+          </picture>
+          <div class="movie-info">
+            <h3>Movie Title</h3>
+            <span class="red">2.8</span>
+          </div>
+          <div class="overview">
+            <h3>Overview</h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+            molestias, harum recusandae magnam accusantium, dicta doloremque,
+            culpa ab provident autem nemo ullam aliquam totam laborum ipsum
+            quisquam ratione illo numquam.
+          </div>
+        </div>
       </main>
-
-      <footer class="footer"></footer>
     </div>
 
     <script src="js/main.min.js"></script>

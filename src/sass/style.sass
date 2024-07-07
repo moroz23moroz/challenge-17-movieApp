@@ -1,6 +1,8 @@
 @import 'libs/normalize'
 @import 'base/fonts'
 @import 'base/variables'
+@import 'blocks/header'
+@import 'blocks/main'
 
 html,
 body
@@ -8,12 +10,8 @@ body
 
 body
     margin: 0
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
-    // background: $dark-color
-    // font-family: $lato
+    background: $main-color
+    font-family: $comfortaa, sans-serif
     // color: $main-color
 
 *
@@ -22,15 +20,22 @@ body
 
 html
     scroll-behavior: smooth
+.wrapper
+    position: relative
+    overflow-x: hidden
+    display: flex
+    flex-direction: column
+    min-height: 100%
+
+main
+    display: flex
+    flex-wrap: wrap
+    flex-grow: 1
 
 button
     padding: 0
     background-color: transparent
     border: none
-
-h1, h2, h3, h4
-    margin: 0
-    font-weight: normal
 
 img
     width: auto
